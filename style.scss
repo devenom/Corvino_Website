@@ -1,0 +1,34 @@
+@import 'sass/nav';
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: $main-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+/*    color: #444;*/
+}
+
+#home {
+    background: url(http://i.imgur.com/1upsgMV.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    h1 {
+        padding-top: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 6em;
+    }
+
+    h1, h2 {
+        text-shadow: 4px 4px black;
+        text-align: center;
+        color: white;
+        font-family: Montserrat, Helvetica Neue, sans-serif;
+    }
+}

@@ -1,9 +1,68 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* line 3, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+.navbar-ontop {
+  background-color: transparent;
+  border-bottom: 0; }
 
+/* line 8, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+nav {
+  position: fixed;
+  top: 0;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  color: #eee;
+  background-color: #3d3d3d;
+  border-bottom: 1px solid #242424; }
+  /* line 18, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    color: white; }
+    /* line 24, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+    nav a:hover {
+      text-decoration: none;
+      color: #ffda7f; }
+  /* line 32, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+  nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    float: right;
+    margin: 0;
+    padding: 0; }
+    /* line 39, C:/Users/arianon/Desktop/Corvino_Website/sass/_nav.scss */
+    nav ul li {
+      display: inline-block; }
+
+/* line 3, C:/Users/arianon/Desktop/Corvino_Website/style.scss */
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/* line 8, C:/Users/arianon/Desktop/Corvino_Website/style.scss */
 body {
-    background-color: rgb(255, 218, 127);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-/*    color: #444;*/
-}
+  background-color: #ffda7f;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  /*    color: #444;*/ }
+
+/* line 15, C:/Users/arianon/Desktop/Corvino_Website/style.scss */
+#home {
+  background: url(http://i.imgur.com/1upsgMV.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%; }
+  /* line 21, C:/Users/arianon/Desktop/Corvino_Website/style.scss */
+  #home h1 {
+    padding-top: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 6em; }
+  /* line 28, C:/Users/arianon/Desktop/Corvino_Website/style.scss */
+  #home h1, #home h2 {
+    text-shadow: 4px 4px black;
+    text-align: center;
+    color: white;
+    font-family: Montserrat, Helvetica Neue, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
