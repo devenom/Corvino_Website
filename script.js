@@ -8,10 +8,10 @@ function collapseNavbar() {
     }
 }
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+//$(window).scroll(collapseNavbar);
+//$(document).ready(collapseNavbar);
 
-$(function() {
-    // Pad the splash page to accomodate for the navbar.
-    $('#home').css("padding-top", $('nav').height());
-});
+//$(function() {
+//    // Pad the splash page to accomodate for the navbar.
+//    $('#home').css("padding-top", $('nav').height());
+//});
