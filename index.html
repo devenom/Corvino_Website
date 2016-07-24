@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>Corvino</title>
 
-    <!-- <VENDOR> -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--<VENDOR> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- </VENDOR> -->
+    <!--</VENDOR> -->
 
-    <link rel="stylesheet" href="/vendor/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!--<link rel="stylesheet" href="/vendor/bootstrap.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <section id="home">
@@ -34,8 +34,8 @@
       <h1>Corvino Pokéfarm</h1>
       <h2>We  provide various services for the cheapest price in the market! </h2>
       <div class="buttons">
-          <button>Order Now</button>
-          <button>Learn more!</button>
+          <button class="button">Order Now</button>
+          <button class="button">Learn more!</button>
       </div>
      </div>
     </section>
@@ -43,27 +43,66 @@
     <section id="services">
        <div class="section-header">
            <h2>Our Services</h2>
+           <hr>
        </div>
 
-        <div class="services-row">
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3></h3>
+        <div class="row services-row">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <div class="service-icon"><img src="http://corvino.us/assets/images/pokemon-go-level-up-600x348-41.jpg" alt=""></div>
+                    <h3>Character leveling</h3>
+                    <p>Do you want to claim all the gyms around you without grinding to level up? Then you are in the right place! We will level up your account by hand up to your desired level. You will gain all pokemons and candies that will be obtained in the process.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3></h3>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <div class="service-icon"><img src="http://corvino.us/assets/images/pokemon-go-egg-hatch-notification-700x387-600x331-44.jpg" alt=""></div>
+                    <h3>Egg hatching</h3>
+                    <p>Are you tired of walking around to hatch your eggs? Or perhaps you have a lot of 2km eggs to dispose of. We offer you our egg hatching service! You will keep all Pokemons and candies that are obtained in the procees. Who knows, maybe you can even hatch a Snorlax or a Lapras!</p>
+                </div>
             </div>
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3></h3>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <div class="service-icon"><img src="http://corvino.us/assets/images/pokemon-go-1-600x341-98.jpg" alt=""></div>
+                    <h3>Pokémon catching</h3>
+                    <p>Do you want a Dragonite, a Snorlax or a Lapras? Then you are in the right place. Our team will make sure that all of those Pokemons will be in your account.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-card">
+                    <div class="service-icon"><img src="http://corvino.us/assets/images/pokemon-go-800x534-600x400-71.jpg" alt=""></div>
+                    <h3>Other services</h3>
+                    <p>Do you want something that is not listed here? Feel free to contact us with your custom request. We will try our best to fulfill it with the cheapest price!</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="whyus">
-        <h2>Why us?</h2>
+        <div class="section-header">
+            <h2>Why us?</h2>
+            <hr>
+        </div>
         <p>We have played Pokemon go ever since it was released in the US. Our team follows the most recent and efficient strategies in leveling or Pokemon finding. We also have completed several orders, in which all of our customers are more than satisfied. We offer the cheapest price in the market. If you find prices cheaper than ours, give us the listing and we will lower or match our price. Our service are also done by hand, so you do not need to worry of getting banned.</p>
+    </section>
+    
+    <section id="contact">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <hr>
+        </div>
+        
+        <div class="form-submission">
+            <form method="post">
+                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" placeholder="Your E-mail">
+                <input type="text" class="form-control" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                <div class="submit-button">
+                    <button class="button">Send</button>
+                </div>
+            </form>
+        </div>
     </section>
 </body>
 </html>
