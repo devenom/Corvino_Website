@@ -1,5 +1,5 @@
-$nav-color: rgba(black, 0.6);
-$main-color: #47a1ef;
+@import "variables";
+@import "navbar";
 
 html, body {
     width: 100%;
@@ -20,55 +20,6 @@ h1 {
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    font-weight: 700;
-    display: inline-block;
-    width: 100%;
-    color: #eee;
-    background-color: $nav-color;
-    // border-bottom: 1px solid darken($nav-color, 10);
-
-    #logo {
-        display: inline;
-
-        img {
-            opacity: 0.8;
-            // display: inline-block;
-            // height: 50%;
-            // margin: none;
-            // padding: none;
-        }
-    }
-
-    a {
-        display: inline-block;
-        text-decoration: none;
-        padding: 2rem 1rem;
-        color: white;
-
-        &:hover {
-            // background-color: $main-color;
-            text-decoration: none;
-            color: $main-color;
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        text-transform: uppercase;
-        float: right;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: inline-block;
-        }
-    }
 }
 
 .title {
