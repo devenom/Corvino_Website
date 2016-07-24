@@ -133,28 +133,30 @@ nav {
         // border: 2px solid black;
         margin: 1em;
         padding: 0.6em;
-        // background-color: darken(#eee, 4);
+        background-color: darken(#eee, 4);
         color: lighten(black, 15);
-        // box-shadow: 0 0 4px gray;
+        box-shadow: 0 0 4px gray;
         height: 410px;
         
         .service-icon {
             height: 150px;
-            max-height: 150px;
+            // max-height: 150px;
             overflow: hidden;
             position: relative;
             
             img {
-                height: auto;
+                margin: auto;
+                display: table-cell;
                 box-shadow: 0 2px 4px gray;
-                width: auto;
                 max-width: 100%;
+                max-height: 100%;
+                border-radius: 2.5%;
             }
         }
 
         .service-card-header {
             width: 100%;
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid gray;
         }
         
         h3 {
@@ -163,8 +165,17 @@ nav {
             font-weight: bold;
         }
         
-        p {
-            font-size: 0.8em;
+        .service-card-copy {
+            display: table;
+            text-align: center;
+            margin: auto;
+            font-size: 0.9em;
+
+            p {
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
         }
     }
     
@@ -175,9 +186,14 @@ nav {
         rgba(black, 0.5), rgba(black, 0.85)
         ), url(http://corvino.us/assets/images/pokemongo-145530996-4-2000x1125-98.jpg);
     background-size: cover;
+    height: 75%;
+    max-height: 768px / 2; 
     color: white;
     p {
-        padding: 1em 2em 3em 2em;
+        text-align: center;
+        margin: auto;
+        max-width: 768px;
+        padding: 1em;
     }
 }
 

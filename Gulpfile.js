@@ -8,10 +8,7 @@ var
 gulp.task('styles', function() {
     gulp
     .src('sass/style.scss')
-    .pipe(sass({
-        errLogToConsole: true,
-        includePaths: ['sass/']
-    }))
+    .pipe(sass({includePaths: ['sass/']}).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['> 1%']
     }))
