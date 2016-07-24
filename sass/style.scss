@@ -33,6 +33,18 @@ nav {
     background-color: $nav-color;
     // border-bottom: 1px solid darken($nav-color, 10);
 
+    #logo {
+        display: inline;
+
+        img {
+            opacity: 0.6;
+            // display: inline-block;
+            // height: 50%;
+            // margin: none;
+            // padding: none;
+        }
+    }
+
     a {
         display: inline-block;
         text-decoration: none;
@@ -43,7 +55,6 @@ nav {
             // background-color: $main-color;
             text-decoration: none;
             color: $main-color;
-
         }
     }
 
