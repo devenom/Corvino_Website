@@ -27,7 +27,7 @@ nav {
   nav #logo {
     display: inline; }
     nav #logo img {
-      opacity: 0.6; }
+      opacity: 0.8; }
   nav a {
     display: inline-block;
     text-decoration: none;
@@ -137,7 +137,7 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(http://corvino.us/assets/images/pokemongo-145530996-4-2000x1125-98.jpg);
   background-size: cover;
   height: 75%;
-  max-height: 768px / 2;
+  max-height: 500px;
   color: white; }
   #whyus p {
     text-align: center;
