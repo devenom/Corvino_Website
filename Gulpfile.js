@@ -9,6 +9,7 @@ gulp.task('styles', function() {
     gulp
     .src('sass/style.scss')
     .pipe(sass({
+        errLogToConsole: true,
         includePaths: ['sass/']
     }))
     .pipe(autoprefixer({
