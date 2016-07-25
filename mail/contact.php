@@ -20,7 +20,7 @@ $email_body = $message;
 $headers = "From: $name <$email_address>\n";
 $headers .= "Reply-To: $email_address";	
 
-mail($to, $email_subject, $email_body, $headers) or die('E-mail error!');
+mail($to, $email_subject, $email_body, $headers) or return false;
 
 return true;			
 ?>

@@ -11,10 +11,22 @@
 //$(window).scroll(collapseNavbar);
 //$(document).ready(collapseNavbar);
 
-//$(function() {
-//    // Pad the splash page to accomodate for the navbar.
-//    $('#home').css("padding-top", $('nav').height());
-//});
+$(function() {
+   // Pad the splash page to accomodate for the navbar.
+   //  $('#home').css("padding-top", $('nav').height());
+   var form = $('#contact-form');
+
+   form.on('submit', function() {
+       $.ajax({
+           url: '/contact/mailer.php',
+           type: 'POST',
+           data: form.serialize(),
+           success: function() {
+               $('#submit').addClass('.button--success');
+           }
+       })
+   })
+});
 
 var XP_DIFFS = [
     null, 0,

@@ -110,6 +110,7 @@ h1, h2, h3 {
     font-weight: 700;
     border-radius: 300px;
     border: 2px solid $button-border-color;
+    transition: all 0.25s;
 
     &:hover {
         text-decoration: none;
@@ -121,6 +122,15 @@ h1, h2, h3 {
     &:visited {
         text-decoration: none;
     }
+
+    &--success {
+        background-color: rgba(green, 0.6);
+    }
+
+    &--failure {
+        background-color: rgba(red, 0.6);
+    }
+            
 }
 
 .home {
