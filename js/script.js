@@ -12,20 +12,21 @@
 //$(document).ready(collapseNavbar);
 
 $(function() {
-   // Pad the splash page to accomodate for the navbar.
-   //  $('#home').css("padding-top", $('nav').height());
-   var form = $('#contact-form');
+   var $form = $('#contact-form');
 
-   form.on('submit', function() {
+   $form.on('submit', function() {
        $.ajax({
-           url: '/contact/mailer.php',
+           url: 'contact/mailer.php',
            type: 'POST',
-           data: form.serialize(),
+           data: $form.serialize(),
            success: function() {
                $('#submit').addClass('.button--success');
+           },
+           error: function() {
+               $('#submit').addClass('.button--failure');
            }
-       })
-   })
+       });
+   });
 });
 
 var XP_DIFFS = [
