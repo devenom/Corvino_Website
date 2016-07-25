@@ -120,10 +120,10 @@
         
         <div class="form-submission">
             <form action="mail/contact.php" method="POST">
-                <input type="text" class="form-control" placeholder="Your Name" required>
-                <input type="email" class="form-control" placeholder="Your E-mail" required>
-                <input type="text" class="form-control" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <input name="email" type="email" class="form-control" placeholder="Your E-mail" required>
+                <input name="subject" type="text" class="form-control" placeholder="Subject">
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
                 <div class="submit-button">
                     <button class="button">Send</button>
                 </div>
