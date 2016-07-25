@@ -104,7 +104,7 @@ h1, h2, h3 {
     display: table;
     background: linear-gradient(
         rgba(black, 0.7), rgba(black, 0.5)
-    ), url(assets/pokeballs.jpg);
+    ), url("assets/pokeballs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -224,7 +224,7 @@ h1, h2, h3 {
 .whyus {
     background: linear-gradient(
         rgba(black, 0.5), rgba(black, 0.85)
-        ), url(assets/pokemongo-145530996-4-2000x1125-98.jpg);
+        ), url("assets/pokemongo-145530996-4-2000x1125-98.jpg");
     background-size: cover;
     max-height: 500px; 
     color: white;
