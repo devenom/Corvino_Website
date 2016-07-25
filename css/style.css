@@ -173,6 +173,10 @@ h1, h2, h3 {
     text-align: center;
     margin: auto;
     padding-bottom: 50px; }
+  .contact__button {
+    display: inline-block;
+    max-width: 768px;
+    margin: 0.5em; }
   .contact .form-submission {
     margin: auto;
     max-width: 768px; }
