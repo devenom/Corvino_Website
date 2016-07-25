@@ -2,7 +2,8 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: #eee;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg") no-repeat center center fixed;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px; }
 
@@ -63,18 +64,17 @@ h1, h2, h3 {
   padding: 1em;
   color: white;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  border-radius: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.6); }
   .button:hover {
     text-decoration: none;
     color: black;
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.6); }
 
 .home {
   display: table;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
   color: white; }
@@ -87,7 +87,7 @@ h1, h2, h3 {
     display: inline-block;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50%; }
+    border-radius: 300px; }
   .home__header {
     font-size: 4em; }
   .home__header, .home__summary {
@@ -98,6 +98,7 @@ h1, h2, h3 {
     margin: 1em; }
 
 .section {
+  background-color: #eee;
   padding-bottom: 2.5em; }
   .section__header {
     margin: 0;
@@ -157,9 +158,7 @@ h1, h2, h3 {
       height: 50%; } }
 
 .whyus {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url("../assets/pokemongo-145530996-4-2000x1125-98.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url("../assets/pokemongo-145530996-4-2000x1125-98.jpg");
-  background-size: cover;
+  background: transparent;
   max-height: 500px;
   color: white; }
   .whyus__copy {
@@ -168,27 +167,40 @@ h1, h2, h3 {
     max-width: 768px;
     padding: 1em; }
 
-#contact {
+.contact {
   background-color: #ededed; }
-  #contact .form-submission {
+  .contact__button-list {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px; }
+  .contact .form-submission {
     margin: auto;
     max-width: 768px; }
-  #contact form input:first-child {
+  .contact form input:first-child {
     border-top: 2px solid #ccc; }
-  #contact form input, #contact form textarea {
-    font-size: 1.1em;
+  .contact form input, .contact form textarea {
+    font-size: 20px;
     background-color: transparent;
     border: none;
     box-shadow: none;
     border-bottom: 2px solid #ccc;
     border-radius: 0;
     padding: 1.5em; }
-  #contact form textarea {
+  .contact form textarea {
     height: 200px; }
-  #contact form .submit-button {
-    text-align: center;
-    margin: 1.5em; }
-    #contact form .submit-button button {
+  .contact form .submit-button {
+    text-align: center; }
+    .contact form .submit-button button {
       font-size: 1.5em;
       width: 40%;
-      padding: 0.5em; }
+      padding: 0.5em;
+      margin: 1.5em; }
+
+.footer {
+  height: 150px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 25px;
+  font-size: 4em;
+  color: white; }

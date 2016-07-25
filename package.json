@@ -1,0 +1,15 @@
+{
+  "private": "true",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4"
+  }
+}

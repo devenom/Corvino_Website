@@ -16,7 +16,7 @@
 //    $('#home').css("padding-top", $('nav').height());
 //});
 
-const XP_DIFFS = [
+var XP_DIFFS = [
     null, 0,
     // Levels 2 to 10
     1000,  2000,  3000,  4000,  5000,  6000,  7000,  8000,  9000,
@@ -28,7 +28,7 @@ const XP_DIFFS = [
     500000, 750000, 1000000, 1250000, 1500000, 2000000, 2500000, 1000000, 1000000
 ]
 
-const PRICE_PER_XP = 0.0002;
+var PRICE_PER_XP = 0.0002;
 
 function XPNeeded(from, to) {
     if ((from > 40 || from < 1) || (to > 40 || to < 1) ) {
@@ -53,9 +53,9 @@ function formula(xp) {
     return xp * PRICE_PER_XP;
 }
 
-[2,5,10,15,20,25,30,35,40].forEach((level) => {
-    const needed = XPNeeded(1, level);
+// [2,5,10,15,20,25,30,35,40].forEach((level) => {
+//     const needed = XPNeeded(1, level);
 
 
-    console.log("LEVEL:", level, "XP:", needed, "PRICE:", formula(needed));
-})
+//     console.log("LEVEL:", level, "XP:", needed, "PRICE:", formula(needed));
+// })
