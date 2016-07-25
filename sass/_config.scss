@@ -1,0 +1,24 @@
+$main-color: #47a1ef;
+$nav-color: rgba(black, 0.6);
+$header-font: 'Montserrat', sans-serif;
+$main-font: 'Source Sans Pro', sans-serif;
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+    font-family: $main-font;
+    font-size: 18px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}

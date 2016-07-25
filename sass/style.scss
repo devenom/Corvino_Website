@@ -1,90 +1,6 @@
-@import "variables";
+@import "config";
 @import "navbar";
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background-color: #eee;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-/*    color: #444;*/
-}
-
-h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding: 2em;
-}
-
-.section-header {
-    margin: 0;
-    padding-top: 3em;
-    padding-bottom: 1.5em;
-    
-    h2 { 
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.5em;
-    }
-    
-    hr {
-        border-top: solid 5px;
-        max-width: 250px;
-    }
-}
-
-.button {
-    background-color: $nav-color;
-    border: none;
-    padding: 1em;
-    margin: 1em;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-
-    &:hover {
-        color: black;
-        background-color: rgba(white, 0.6);
-    }
-}
-
-#home {
-    display: table;
-    background: linear-gradient(
-        rgba(black, 0.5), rgba(black, 0.5)
-    ), url(http://i.imgur.com/Rh8e8E3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-
-    h1 {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 4em;
-    }
-
-    h1, h2 {
-        text-shadow: 4px 4px black;
-        text-align: center;
-        color: white;
-        font-family: Montserrat, Helvetica Neue, sans-serif;
-    }
-}
+@import "home";
 
 #services {
     h2,h3 {
@@ -95,9 +11,9 @@ h1, h2 {
         // border: 2px solid black;
         margin: 1em;
         padding: 0.6em;
-        background-color: darken(#eee, 4);
+        // background-color: darken(#eee, 4);
         color: lighten(black, 15);
-        box-shadow: 0 0 4px gray;
+        // box-shadow: 0 0 4px gray;
         height: 410px;
         
         .service-icon {
@@ -170,7 +86,7 @@ h1, h2 {
         // padding: 0 1em;
         
         input:first-child {
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #ccc;
         }
 
         input, textarea {
@@ -178,7 +94,7 @@ h1, h2 {
             background-color: transparent;
             border: none;
             box-shadow: none;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 2px solid #ccc;
             border-radius: 0;
             padding: 1.5em;
         }
