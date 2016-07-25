@@ -132,7 +132,8 @@ h1, h2, h3 {
 }
 
 .section {
-    min-height: 600px;
+//    min-height: 600px;
+    padding-bottom: 2.5em;
 
     &__header {
         margin: 0;
@@ -151,10 +152,6 @@ h1, h2, h3 {
         border-top: solid 5px;
         max-width: 250px;
     }
-}
-
-.services-section {
-    padding-bottom: 2.5em;
 }
 
 .service-card {
