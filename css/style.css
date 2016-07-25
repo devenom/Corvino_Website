@@ -68,8 +68,8 @@ h1, h2, h3 {
 
 .home {
   display: table;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/assets/pokeballs.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/assets/pokeballs.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/pokeballs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -147,8 +147,8 @@ h1, h2, h3 {
       height: 50%; } }
 
 .whyus {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(/assets/pokemongo-145530996-4-2000x1125-98.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(/assets/pokemongo-145530996-4-2000x1125-98.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url("../assets/pokemongo-145530996-4-2000x1125-98.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url("../assets/pokemongo-145530996-4-2000x1125-98.jpg");
   background-size: cover;
   max-height: 500px;
   color: white; }
