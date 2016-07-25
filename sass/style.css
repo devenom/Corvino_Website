@@ -1,0 +1,228 @@
+/* line 6, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+html, body {
+  height: 100%; }
+
+/* line 11, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+body {
+  background-color: #eee;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px; }
+
+/* line 17, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+h1 {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/* line 22, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif; }
+
+/* line 26, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.6); }
+  /* line 36, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__logo {
+    display: inline;
+    opacity: 0.8; }
+  /* line 41, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__list {
+    list-style-type: none;
+    text-transform: uppercase;
+    float: right;
+    margin: 0;
+    padding: 0; }
+  /* line 49, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__item {
+    display: inline-block;
+    text-align: center; }
+  /* line 54, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    color: white; }
+    /* line 60, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    .nav__link:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      color: black; }
+
+@media screen and (max-width: 767px) {
+  /* line 70, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__logo {
+    display: none; }
+  /* line 74, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__list {
+    width: 100%; }
+  /* line 78, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__item {
+    width: 25%;
+    float: left; }
+  /* line 83, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .nav__link {
+    width: 100%; } }
+
+/* line 89, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700; }
+  /* line 97, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .button:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6); }
+
+/* line 103, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.home {
+  display: table;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/assets/pokeballs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white; }
+  /* line 114, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .home__title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2em; }
+  /* line 121, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .home__header {
+    font-size: 4em; }
+  /* line 125, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .home__header, .home__summary {
+    text-shadow: 4px 4px black; }
+  /* line 129, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .home__button {
+    margin: 1em; }
+
+/* line 134, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.section {
+  padding-bottom: 2.5em; }
+  /* line 138, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .section__header {
+    margin: 0;
+    padding-top: 3em;
+    padding-bottom: 1.5em; }
+  /* line 144, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .section__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em; }
+  /* line 151, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .section__separator {
+    border-top: solid 5px;
+    max-width: 250px; }
+
+/* line 157, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.service-card {
+  padding: 1em;
+  color: #262626;
+  height: 410px; }
+  /* line 166, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .service-card h2, .service-card h3 {
+    text-transform: uppercase; }
+  /* line 170, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .service-card__image {
+    height: 150px;
+    overflow: hidden;
+    position: relative; }
+    /* line 176, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    .service-card__image img {
+      margin: auto;
+      display: table-cell;
+      box-shadow: 0 2px 4px gray;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 2.5%; }
+  /* line 186, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .service-card__header {
+    width: 100%;
+    border-bottom: 2px solid gray; }
+    /* line 190, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    .service-card__header h3 {
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold; }
+  /* line 197, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .service-card__copy {
+    display: table;
+    text-align: center;
+    margin: auto;
+    font-size: 16px; }
+    /* line 203, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    .service-card__copy p {
+      height: 50%;
+      display: table-cell;
+      vertical-align: middle;
+      margin: auto; }
+
+@media screen and (max-width: 767px) {
+  /* line 213, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .service-card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 217, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    .service-card__copy {
+      width: 75%;
+      height: 50%; } }
+
+/* line 224, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+.whyus {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(/assets/pokemongo-145530996-4-2000x1125-98.jpg);
+  background-size: cover;
+  max-height: 500px;
+  color: white; }
+  /* line 232, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  .whyus__copy {
+    text-align: center;
+    margin: auto;
+    max-width: 768px;
+    padding: 1em; }
+
+/* line 240, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+#contact {
+  background-color: #ededed; }
+  /* line 242, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  #contact .form-submission {
+    margin: auto;
+    max-width: 768px; }
+  /* line 250, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  #contact form input:first-child {
+    border-top: 2px solid #ccc; }
+  /* line 254, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  #contact form input, #contact form textarea {
+    font-size: 1.1em;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    padding: 1.5em; }
+  /* line 264, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  #contact form textarea {
+    height: 200px; }
+  /* line 268, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+  #contact form .submit-button {
+    text-align: center;
+    margin: 1.5em; }
+    /* line 271, C:/Users/arianon/Desktop/Corvino_Website/sass/style.scss */
+    #contact form .submit-button button {
+      font-size: 1.5em;
+      width: 40%;
+      padding: 0.5em; }
+
+/*# sourceMappingURL=style.css.map */
