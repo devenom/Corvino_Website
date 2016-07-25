@@ -44,19 +44,6 @@ h1, h2, h3 {
       text-decoration: none;
       color: black; }
 
-.section-header {
-  margin: 0;
-  padding-top: 3em;
-  padding-bottom: 1.5em; }
-  .section-header h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5em; }
-  .section-header hr {
-    border-top: solid 5px;
-    max-width: 250px; }
-
 .button {
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
@@ -70,12 +57,13 @@ h1, h2, h3 {
 
 .home {
   display: table;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(http://i.imgur.com/Rh8e8E3.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(http://i.imgur.com/Rh8e8E3.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/assets/pokeballs.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/assets/pokeballs.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: white; }
   .home__title {
     display: table-cell;
     vertical-align: middle;
@@ -84,55 +72,69 @@ h1, h2, h3 {
   .home__header {
     font-size: 4em; }
   .home__header, .home__summary {
-    text-shadow: 4px 4px black;
-    color: white; }
+    text-shadow: 4px 4px black; }
   .home__button {
     margin: 1em; }
 
-#services h2, #services h3 {
-  text-transform: uppercase; }
+.section {
+  min-height: 500px; }
+  .section__header {
+    margin: 0;
+    padding-top: 3em;
+    padding-bottom: 1.5em; }
+  .section__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em; }
+  .section__separator {
+    border-top: solid 5px;
+    max-width: 250px; }
 
-#services .service-card {
+.service-card {
   margin: 1em;
   padding: 0.6em;
+  background-color: #e4e4e4;
   color: #262626;
+  box-shadow: 0 0 4px gray;
   height: 410px; }
-  #services .service-card .service-icon {
+  .service-card h2, .service-card h3 {
+    text-transform: uppercase; }
+  .service-card__image {
     height: 150px;
     overflow: hidden;
     position: relative; }
-    #services .service-card .service-icon img {
+    .service-card__image img {
       margin: auto;
       display: table-cell;
       box-shadow: 0 2px 4px gray;
       max-width: 100%;
       max-height: 100%;
       border-radius: 2.5%; }
-  #services .service-card .service-card-header {
+  .service-card__header {
     width: 100%;
     border-bottom: 2px solid gray; }
-  #services .service-card h3 {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold; }
-  #services .service-card .service-card-copy {
+    .service-card__header h3 {
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold; }
+  .service-card__copy {
     display: table;
     text-align: center;
     margin: auto;
     font-size: 0.9em; }
-    #services .service-card .service-card-copy p {
+    .service-card__copy p {
       display: table-cell;
       vertical-align: middle;
       margin: auto; }
 
-#whyus {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(http://corvino.us/assets/images/pokemongo-145530996-4-2000x1125-98.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(http://corvino.us/assets/images/pokemongo-145530996-4-2000x1125-98.jpg);
+.whyus {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(/assets/pokemongo-145530996-4-2000x1125-98.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url(/assets/pokemongo-145530996-4-2000x1125-98.jpg);
   background-size: cover;
-  height: 75%;
   max-height: 500px;
   color: white; }
-  #whyus p {
+  .whyus__copy {
     text-align: center;
     margin: auto;
     max-width: 768px;
