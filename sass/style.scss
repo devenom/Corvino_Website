@@ -23,7 +23,7 @@ h1, h2, h3 {
     font-family: $header-font;
 }
 
-.navbar {
+.nav {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -48,6 +48,7 @@ h1, h2, h3 {
     
     &__item {
         display: inline-block;
+        text-align: center;
     }
     
     &__link {
@@ -60,6 +61,27 @@ h1, h2, h3 {
             background-color: rgba(white, 0.6);
             text-decoration: none;
             color: black;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav {
+        &__logo {
+            display: none;
+        }
+
+        &__list {
+            width: 100%;
+        }
+
+        &__item {
+            width: 25%;
+            float: left;
+        }
+
+        &__link {
+            width: 100%;
         }
     }
 }
@@ -178,9 +200,19 @@ h1, h2, h3 {
         font-size: 0.9em;
 
         p {
+            height: 50%;
             display: table-cell;
             vertical-align: middle;
             margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service-card {
+        &__copy {
+            width: 75%;
+            height: 50%;
         }
     }
 }
@@ -231,6 +263,7 @@ h1, h2, h3 {
         
         .submit-button {
             text-align: center;
+            margin: 1.5em;
             button {
                 font-size: 1.5em;
                 width: 40%;
