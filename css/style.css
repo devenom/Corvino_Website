@@ -23,8 +23,9 @@ h1, h2, h3 {
   color: #eee;
   background-color: rgba(0, 0, 0, 0.6); }
   .nav__logo {
-    display: inline;
-    opacity: 0.8; }
+    display: inline-block; }
+    .nav__logo img {
+      max-height: 65px; }
   .nav__list {
     list-style-type: none;
     text-transform: uppercase;
@@ -56,6 +57,7 @@ h1, h2, h3 {
     width: 100%; } }
 
 .button {
+  text-decoration: none;
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
   padding: 1em;
@@ -63,6 +65,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-weight: 700; }
   .button:hover {
+    text-decoration: none;
     color: black;
     background-color: rgba(255, 255, 255, 0.6); }
 
@@ -80,10 +83,17 @@ h1, h2, h3 {
     vertical-align: middle;
     text-align: center;
     padding: 2em; }
+  .home__logo {
+    display: inline-block;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%; }
   .home__header {
     font-size: 4em; }
   .home__header, .home__summary {
     text-shadow: 4px 4px black; }
+  .home__button-list {
+    margin-top: 3em; }
   .home__button {
     margin: 1em; }
 
