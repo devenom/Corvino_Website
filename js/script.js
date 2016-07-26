@@ -16,7 +16,7 @@ $(function() {
 
    $form.on('submit', function() {
        $.ajax({
-           url: 'contact/mailer.php',
+           url: 'mail/contact.php',
            type: 'POST',
            data: $form.serialize(),
            success: function() {
